@@ -9,3 +9,6 @@ class Article(models.Model):
     # thumbnail
     # image
     # author
+
+    def __str__(self):
+        return self.title
