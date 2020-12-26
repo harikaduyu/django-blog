@@ -1,9 +1,13 @@
-body {
-  background-color: #0f121f;
-  background-image: url(stars.png);
+html {
+  /* background-color: #0f121f; */
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  height: 100%;
+  /* background-image: url(stars.png); */
   /* background-image: url(moon.jpg); */
+  background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
+  background-size: cover;
+  color: #373930;
 }
 
 body * {
@@ -22,7 +26,7 @@ h5 {
 a,
 a:hover,
 a:visited {
-  color: #fff;
+  color: #373930;
   text-decoration: none;
 }
 
@@ -48,15 +52,21 @@ nav {
 }
 nav li {
   display: inline-block;
-  margin-left: 20px;
+  margin-right: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.signlog {
+  border: 1px solid #373930;
 }
 
 nav button {
   background: none;
-  color: white;
+  color: #373930;
   cursor: pointer;
-  border: 0;
   font-size: 1em;
+  border: none;
 }
 
 .articles {
@@ -67,18 +77,20 @@ nav button {
 
 .article {
   padding: 10px;
-  border: 1px solid #00dba0;
+  border: 1.3px solid #00dba0;
   position: relative;
   padding-bottom: 40px;
 }
 
 .article h2 {
   font-size: 1.2em;
+
+  font-weight: bold;
 }
 
 .article .author {
   padding: 10px;
-  background: #00dba0;
+  background: #b8ffec8d;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -92,6 +104,9 @@ nav button {
 
 .article-detail .article img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .article-detail .article h2 {
@@ -113,21 +128,21 @@ nav button {
 .site-form input,
 .site-form textarea {
   display: block;
-  margin: 20px 0 0 0;
+  margin: 8px 0 25px 0;
   padding: 10px;
 }
 
 a.highlight {
-  border: 1px solid #00dba0;
+  border: 1px solid #0dad82;
   padding: 10px;
   border-radius: 4px;
-  color: #00dba0;
+  color: #0dad82;
 }
 
 .helptext,
 .helptext ul {
   margin: 0 auto 20px;
-  color: #bbb;
+  color: #7d826d;
   font-size: 0.9em;
   display: block;
 }
@@ -151,4 +166,8 @@ a.highlight {
   font-size: 1.2em;
   border-radius: 4px;
   margin: 10px 0;
+}
+
+.logo {
+  margin-left: 20px;
 }
